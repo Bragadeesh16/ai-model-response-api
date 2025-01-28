@@ -1,0 +1,649 @@
+{
+	"info": {
+		"_postman_id": "cf950f37-eebb-4508-a880-d03a4ac67728",
+		"name": "aiprompt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35190430"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "test@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "bragadeesh",
+									"type": "text"
+								},
+								{
+									"key": "password2",
+									"value": "bragadeesh",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/jwt-auth/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"jwt-auth",
+								"login",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "test@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "bragadeesh",
+											"type": "text"
+										},
+										{
+											"key": "password2",
+											"value": "bragadeesh",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/jwt-auth/login/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"jwt-auth",
+										"login",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 10:04:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.12"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "OPTIONS, POST"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "483"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTIyNjc2LCJpYXQiOjE3MzgwNTg2NzYsImp0aSI6ImE0NGIzZDczODBmYjQzM2I5ZWEzNjc2NjQwMTgwZTk5IiwidXNlcl9pZCI6MX0.Yy0UQxet4obfnhKCOK5RE9b90gqksWU0WKS1c_gwvmU\",\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc2MDE3NzA3NiwiaWF0IjoxNzM4MDU4Njc2LCJqdGkiOiI4MDZkZGQyMjJlYWI0ZmY1ODNlZmY3YjY3ODZjNTYwNiIsInVzZXJfaWQiOjF9.0Hy7VfzMDpS-q2abctH0Pz-0RyZQqzIR1TF_iekw2I0\"\n}"
+						}
+					]
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "test@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "bragadeesh",
+									"type": "text"
+								},
+								{
+									"key": "password2",
+									"value": "bragadeesh",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/jwt-auth/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"jwt-auth",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "test1@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "bragadeesh",
+											"type": "text"
+										},
+										{
+											"key": "password2",
+											"value": "bragadeesh",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/jwt-auth/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"jwt-auth",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jan 2025 10:05:00 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.12"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "OPTIONS, POST"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "557"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"email\": \"test1@gmail.com\",\n    \"response\": \"account has been created\",\n    \"token\": {\n        \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc2MDE3NzEwMCwiaWF0IjoxNzM4MDU4NzAwLCJqdGkiOiJkZDcxOTRhMzA3YWQ0ZWI5YjU3NDYzNzhkOGVhMTk4OSIsInVzZXJfaWQiOjN9.4nVksdQUrATxFQWGNQhiWtFiyi_O2FKuAE0x_c892lM\",\n        \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTIyNzAwLCJpYXQiOjE3MzgwNTg3MDAsImp0aSI6IjNkOTE3MDM4NTNiNzQyNjI4OGQ5NDE3M2ZlN2Q0M2M5IiwidXNlcl9pZCI6M30.JBNBF1rjsfWRocrYUqEbQRpJt19BNegk30xGzuAXx8I\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ai all responses",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTIyNDE4LCJpYXQiOjE3MzgwNTg0MTgsImp0aSI6IjFhMzZiZDQxMjBmOTRjNzY4ZDNjMWJkYWZkNDlmY2ExIiwidXNlcl9pZCI6MX0.e9j6u4LVyF6OICHuUwvmK9nfYYVEkYWET1o8f-0BEWc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/responses/?page=2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"responses",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ai all responses",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTIyNDE4LCJpYXQiOjE3MzgwNTg0MTgsImp0aSI6IjFhMzZiZDQxMjBmOTRjNzY4ZDNjMWJkYWZkNDlmY2ExIiwidXNlcl9pZCI6MX0.e9j6u4LVyF6OICHuUwvmK9nfYYVEkYWET1o8f-0BEWc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/responses/?page=2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"responses",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 28 Jan 2025 10:04:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.12"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "6539"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 6,\n    \"next\": \"http://127.0.0.1:8000/api/responses/?page=3\",\n    \"previous\": \"http://127.0.0.1:8000/api/responses/\",\n    \"results\": [\n        {\n            \"id\": 3,\n            \"prompt\": \"what is python\",\n            \"response_text\": \"Okay, let's talk about Python!\\n\\n**Python is a versatile, high-level, and general-purpose programming language.** Here's a breakdown of what that means:\\n\\n* **High-Level:** This means it's designed to be closer to human language and further away from the low-level instructions that computers understand directly. This makes Python easier to learn, write, and read compared to languages like assembly code. You don't have to worry about the nitty-gritty details of memory management as much.\\n\\n* **General-Purpose:** Python isn't limited to a specific kind of task. You can use it for a vast range of applications, including:\\n    * **Web Development:** Building websites and web applications (using frameworks like Django and Flask).\\n    * **Data Science and Machine Learning:** Analyzing data, building models, and doing statistical analysis (with libraries like Pandas, NumPy, and Scikit-learn).\\n    * **Scripting and Automation:** Automating repetitive tasks, managing files, and creating utility scripts.\\n    * **Game Development:** Creating simple 2D games (using libraries like Pygame).\\n    * **Desktop Applications:** Building graphical user interfaces (GUIs) with libraries like Tkinter and PyQt.\\n    * **Scientific Computing:** Performing complex calculations and simulations.\\n    * **Artificial Intelligence (AI):** Developing AI systems.\\n    * **Education:** It's often used to teach programming due to its readability and ease of use.\\n\\n**Key Features of Python:**\\n\\n* **Readability:** Python emphasizes code clarity. Its syntax is designed to be clean and easy to understand, often using indentation to define code blocks rather than curly braces like other languages. This makes it a popular choice for beginners.\\n* **Interpreted Language:** Python code is executed line by line by an interpreter, rather than being compiled into machine code directly. This makes the development process faster.\\n* **Dynamic Typing:** You don't have to declare the data type of a variable explicitly. Python infers the type at runtime, which simplifies coding.\\n* **Large Standard Library:** Python comes with a vast collection of built-in modules and functions that provide pre-written code for common tasks, saving you time and effort.\\n* **Extensive Ecosystem of Libraries and Frameworks:** The Python community is huge, and there are numerous third-party libraries and frameworks available for almost any purpose you can imagine.\\n* **Cross-Platform Compatibility:** Python code can run on various operating systems like Windows, macOS, and Linux without modification, making it very portable.\\n* **Object-Oriented Programming (OOP):** Python supports OOP principles, allowing you to structure your code around objects and classes for better organization and reusability.\\n\\n**In Summary:**\\n\\nPython is a powerful yet approachable programming language that's used across many different fields. Its readability, versatility, and vast ecosystem make it a great choice for both beginners and experienced programmers alike.\\n\\nDo you have any specific questions about Python that I can answer for you? Perhaps you'd like to know how to install it, or see some example code? I'm here to help!\\n\",\n            \"model_used\": \"gemini-2.0-flash-exp\",\n            \"timestamp\": \"2025-01-28T08:15:53.326861Z\",\n            \"status\": \"success\",\n            \"processing_time\": 7.705228567123413\n        },\n        {\n            \"id\": 4,\n            \"prompt\": \"write some basic python code\",\n            \"response_text\": \"Okay, let's start with some basic Python code examples. I'll provide a few options, covering common introductory concepts, and you can tell me if you'd like to explore any of them further or have something specific in mind.\\n\\n**1. Printing \\\"Hello, World!\\\"**\\n\\n   This is the classic first program in many languages:\\n\\n   ```python\\n   print(\\\"Hello, World!\\\")\\n   ```\\n   \\n   *   **Explanation:**  `print()` is a function that displays output to the console. The text \\\"Hello, World!\\\" is a string literal enclosed in double quotes.\\n\\n**2. Variables and Basic Arithmetic**\\n\\n   ```python\\n   x = 10\\n   y = 5\\n   sum_result = x + y\\n   difference_result = x - y\\n   product_result = x * y\\n   division_result = x / y\\n\\n   print(\\\"Sum:\\\", sum_result)\\n   print(\\\"Difference:\\\", difference_result)\\n   print(\\\"Product:\\\", product_result)\\n   print(\\\"Division:\\\", division_result)\\n   ```\\n\\n   *   **Explanation:**\\n      *   `x` and `y` are variables that store numerical values.\\n      *   `+`, `-`, `*`, `/` are arithmetic operators for addition, subtraction, multiplication, and division respectively.\\n      *   The results of the operations are stored in new variables.\\n      *   The `print()` function displays the results along with labels.\\n\\n**3. Conditional Statements (if/else)**\\n\\n   ```python\\n   age = 20\\n   if age >= 18:\\n       print(\\\"You are an adult.\\\")\\n   else:\\n       print(\\\"You are not an adult.\\\")\\n\\n   ```\\n\\n   *   **Explanation:**\\n      *   `if` and `else` are keywords for conditional branching.\\n      *   The condition `age >= 18` is evaluated. If it's `True`, the code block under the `if` statement executes. Otherwise, the code block under the `else` statement executes.\\n\\n**4. Loops (for loop)**\\n\\n   ```python\\n   for i in range(5):\\n       print(i)\\n   ```\\n\\n    *   **Explanation:**\\n        * The `for` loop iterates through a sequence of numbers generated by the `range(5)` function (which produces numbers from 0 to 4).\\n        * In each iteration, the loop variable `i` takes on the next value from the sequence, and the code inside the loop is executed (printing the current value of `i`).\\n\\n**5. Lists**\\n\\n   ```python\\n   my_list = [1, 2, 3, 4, 5]\\n   print(\\\"The list is:\\\", my_list)\\n   print(\\\"The second element is:\\\", my_list[1])\\n\\n   my_list.append(6) # Adding element to the end\\n   print(\\\"Modified list:\\\", my_list)\\n   ```\\n   * **Explanation:**\\n    *   `my_list` creates a list which stores a sequence of values.\\n    *   `my_list[1]` accesses the element at index 1 (remember that indices start from 0).\\n    *   `my_list.append(6)` adds element `6` at the end.\\n\\n**Which of these examples are most interesting to you? Or would you like to explore another basic concept like functions, input from the user, or data types? Let me know!**\\n\",\n            \"model_used\": \"gemini-2.0-flash-exp\",\n            \"timestamp\": \"2025-01-28T08:16:21.587247Z\",\n            \"status\": \"success\",\n            \"processing_time\": 10.712643384933472\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "getsingleresponse",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTIyNDE4LCJpYXQiOjE3MzgwNTg0MTgsImp0aSI6IjFhMzZiZDQxMjBmOTRjNzY4ZDNjMWJkYWZkNDlmY2ExIiwidXNlcl9pZCI6MX0.e9j6u4LVyF6OICHuUwvmK9nfYYVEkYWET1o8f-0BEWc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/responses/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"responses",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getsingleresponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTIyNDE4LCJpYXQiOjE3MzgwNTg0MTgsImp0aSI6IjFhMzZiZDQxMjBmOTRjNzY4ZDNjMWJkYWZkNDlmY2ExIiwidXNlcl9pZCI6MX0.e9j6u4LVyF6OICHuUwvmK9nfYYVEkYWET1o8f-0BEWc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/responses/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"responses",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 28 Jan 2025 10:05:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.12"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3496"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"prompt\": \"what is python\",\n    \"response_text\": \"Okay, let's talk about what Python is!\\n\\n**Python is a high-level, interpreted, general-purpose programming language.** That's a bit of a mouthful, so let's break it down:\\n\\n* **High-level:** This means that Python is designed to be easy for humans to read and write. It uses syntax that's closer to natural language than low-level languages like assembly code. You don't have to worry about managing memory directly, for example.\\n\\n* **Interpreted:** Python code is not compiled into machine code beforehand like some languages (e.g., C++). Instead, it's executed line by line by an interpreter. This makes it easier to develop and test code quickly, as you don't need to recompile every time you make a change.\\n\\n* **General-purpose:** Python can be used for a wide variety of tasks. It's not limited to one specific area. Here are some examples:\\n    * **Web Development:** Building websites and web applications (using frameworks like Django and Flask).\\n    * **Data Science and Machine Learning:** Analyzing data, creating models, and performing statistical analysis (using libraries like Pandas, NumPy, Scikit-learn).\\n    * **Scripting and Automation:** Automating tasks like file manipulation, system administration, and web scraping.\\n    * **Game Development:** Creating simple games using libraries like Pygame.\\n    * **Scientific Computing:** Performing simulations, numerical calculations, and visualization.\\n    * **Education:** Python's simple syntax makes it a popular language for teaching programming.\\n\\n**Key Features of Python:**\\n\\n* **Readability:** Python's design emphasizes readability, using indentation to define code blocks instead of curly braces. This makes the code cleaner and easier to understand.\\n* **Large Standard Library:** Python comes with a vast library of built-in modules and functions that provide a wide range of functionality, reducing the need to write everything from scratch.\\n* **Dynamically Typed:** You don't need to declare the data type of variables explicitly; Python infers it at runtime. This makes it easier to get started but can sometimes lead to runtime errors if you're not careful.\\n* **Object-Oriented:** Python supports object-oriented programming (OOP) principles, allowing you to structure your code using classes and objects.\\n* **Cross-Platform:** Python code can run on various operating systems (Windows, macOS, Linux) without significant modifications.\\n* **Community Support:** Python has a large and active community, which means there are lots of resources, tutorials, and help available.\\n\\n**In Simple Terms:**\\n\\nImagine you have a set of instructions you want a computer to follow. Python is like a clear and easy-to-understand language that you can use to write those instructions. It's versatile, powerful, and has lots of helpful tools that make it easier to get things done.\\n\\n**Why is it popular?**\\n\\n* **Beginner-Friendly:** It's easy to learn, making it a great choice for beginners.\\n* **Productivity:** It's efficient for writing and deploying applications.\\n* **Versatility:** It can be used for many different things.\\n* **Large Community:** It has a large and supportive community that contributes to its growth and improvement.\\n\\nDo you have any other questions about Python? I'm happy to explain further!\\n\",\n    \"model_used\": \"gemini-2.0-flash-exp\",\n    \"timestamp\": \"2025-01-28T06:10:10.136774Z\",\n    \"status\": \"success\",\n    \"processing_time\": 7.858514070510864\n}"
+				}
+			]
+		},
+		{
+			"name": "aiprompt",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTIyNDE4LCJpYXQiOjE3MzgwNTg0MTgsImp0aSI6IjFhMzZiZDQxMjBmOTRjNzY4ZDNjMWJkYWZkNDlmY2ExIiwidXNlcl9pZCI6MX0.e9j6u4LVyF6OICHuUwvmK9nfYYVEkYWET1o8f-0BEWc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "input_text",
+							"value": "write some basic python code",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/responses/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"responses",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "aiprompt",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4OTIyNDE4LCJpYXQiOjE3MzgwNTg0MTgsImp0aSI6IjFhMzZiZDQxMjBmOTRjNzY4ZDNjMWJkYWZkNDlmY2ExIiwidXNlcl9pZCI6MX0.e9j6u4LVyF6OICHuUwvmK9nfYYVEkYWET1o8f-0BEWc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "input_text",
+									"value": "write some basic python code",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/responses/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"responses",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 28 Jan 2025 10:05:27 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.12"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3099"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"response\": \"Okay, here's a collection of basic Python code snippets covering a variety of fundamental concepts:\\n\\n**1. Printing to the console:**\\n\\n```python\\nprint(\\\"Hello, world!\\\")  # Prints a string\\nprint(10)             # Prints an integer\\nprint(3.14)           # Prints a float\\nprint(True)          # Prints a boolean\\n```\\n\\n**2. Variables and Data Types:**\\n\\n```python\\nname = \\\"Alice\\\"       # String\\nage = 30            # Integer\\nheight = 5.8         # Float\\nis_student = False    # Boolean\\n\\nprint(name)\\nprint(age)\\nprint(height)\\nprint(is_student)\\n```\\n\\n**3. Basic Arithmetic:**\\n\\n```python\\nx = 10\\ny = 5\\n\\nsum = x + y       # Addition\\ndifference = x - y  # Subtraction\\nproduct = x * y   # Multiplication\\nquotient = x / y  # Division (results in a float)\\ninteger_division = x // y  # Integer Division (truncates the decimal)\\nremainder = x % y   # Modulus (remainder after division)\\nexponent = x ** y    # Exponentiation (x to the power of y)\\n\\nprint(sum)\\nprint(difference)\\nprint(product)\\nprint(quotient)\\nprint(integer_division)\\nprint(remainder)\\nprint(exponent)\\n```\\n\\n**4. Conditional Statements (if, elif, else):**\\n\\n```python\\ntemperature = 25\\n\\nif temperature > 30:\\n    print(\\\"It's hot!\\\")\\nelif temperature > 20:\\n    print(\\\"It's warm.\\\")\\nelse:\\n    print(\\\"It's cool.\\\")\\n```\\n\\n**5. Loops (for and while):**\\n\\n   * **for loop (iterating through a sequence):**\\n     ```python\\n     for i in range(5):  # range(5) generates numbers from 0 to 4\\n         print(i)\\n     \\n     fruits = [\\\"apple\\\", \\\"banana\\\", \\\"cherry\\\"]\\n     for fruit in fruits:\\n         print(fruit)\\n     ```\\n   * **while loop (repeating while a condition is true):**\\n     ```python\\n     count = 0\\n     while count < 3:\\n         print(count)\\n         count += 1\\n     ```\\n\\n**6. Lists (ordered, mutable collections):**\\n\\n```python\\nmy_list = [1, 2, 3, \\\"apple\\\", \\\"banana\\\"]\\nprint(my_list)\\nprint(my_list[0])  # Access by index\\nmy_list.append(\\\"cherry\\\")  # Add to the end\\nmy_list[1] = 10       # Modify element\\nprint(my_list)\\n```\\n\\n**7. Functions (defining reusable blocks of code):**\\n\\n```python\\ndef greet(name):\\n    print(\\\"Hello, \\\" + name + \\\"!\\\")\\n\\ngreet(\\\"Bob\\\") # Call the function\\n\\ndef add(a, b):\\n    return a + b\\n\\nresult = add(5, 7)\\nprint(result)\\n```\\n\\n**8. User Input:**\\n\\n```python\\nname = input(\\\"Enter your name: \\\")\\nprint(\\\"Hello, \\\" + name + \\\"!\\\")\\n\\nage_str = input(\\\"Enter your age: \\\")\\nage = int(age_str) # Convert input to an integer\\nprint(\\\"You are \\\" + str(age) + \\\" years old.\\\")\\n```\\n\\n**How to Run This Code:**\\n\\n1.  **Save:** Save the code in a file named something like `basic_python.py`.\\n2.  **Run:** Open a terminal or command prompt, navigate to the directory where you saved the file, and then run:\\n    ```bash\\n    python basic_python.py\\n    ```\\n\\n**Which of these examples would you like to explore in more depth, or what specific kind of basic code are you interested in?** I'm ready to write more examples or explain any of this further.\\n\",\n        \"time_taken\": 8.731000185012817\n    }\n}"
+				}
+			]
+		}
+	]
+}
